@@ -1,0 +1,9 @@
+{
+	"private": true,
+	"name": "project-seed",
+	"description": "A front-end project skeleton.",
+	"version": "0.0.0",
+	"scripts": {
+		"postinstall": "bower install"
+	}
+}
