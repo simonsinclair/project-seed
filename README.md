@@ -1,4 +1,4 @@
-project-seed
+Project Seed
 ============
 
 A front-end project skeleton.
