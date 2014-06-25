@@ -1,0 +1,9 @@
+{
+	"private": true,
+	"name": "project-seed",
+	"description": "A front-end project skeleton.",
+	"version": "0.0.0",
+	"homepage": "https://github.com/simonsinclair/project-seed",
+	"license": "MIT",
+	"dependencies": {}
+}
