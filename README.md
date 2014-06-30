@@ -16,7 +16,7 @@ $ npm install
 
 ### Develop
 
-`$ grunt'
+`$ grunt`
 
 `ctrl + c` to stop developing.
 
