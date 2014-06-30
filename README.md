@@ -18,8 +18,6 @@ $ npm install
 
 `$ grunt`
 
-`ctrl + c` to stop developing.
-
 ### Deploy
 
 `$ grunt deploy`
