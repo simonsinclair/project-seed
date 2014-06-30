@@ -9,8 +9,20 @@
 			box-sizing: border-box;
 }
 
-html {
+html {}
+body {
 	color: #333;
-	font-size: 1em;
 	line-height: 1.5;
+}
+
+// Utility
+//
+
+.clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
