@@ -38,6 +38,13 @@ module.exports = function(grunt) {
 			}
 		},
 
+    autoprefixer: {
+      options: {}
+      main: {
+
+      }
+    },
+
 		'gh-pages': {
 			src: ['**'],
 			options: {
@@ -50,6 +57,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-gh-pages');
 
 	grunt.registerTask('default', ['sass', 'connect', 'watch']);
