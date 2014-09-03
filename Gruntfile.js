@@ -3,11 +3,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     sass: {
       dist: {
-        files: {
-          'sass/main.css': 'sass/main.scss'
-        },
         options: {
           style: 'compressed'
+        },
+        files: {
+          'sass/main.css': 'sass/main.scss'
         }
       }
     },
@@ -42,10 +42,11 @@ module.exports = function(grunt) {
     },
 
     autoprefixer: {
+      options: {},
       main: {
-        'public/css/main.css': 'sass/main.css'
+        src: 'sass/main.css',
+        dest: 'public/css/main.css'
       },
-      options: {}
     },
 
     'gh-pages': {
@@ -63,6 +64,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-gh-pages');
 
-  grunt.registerTask('default', ['sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'connect', 'watch']);
   grunt.registerTask('deploy', ['gh-pages']);
 };
