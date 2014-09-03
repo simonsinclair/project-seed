@@ -19,7 +19,10 @@ module.exports = function(grunt) {
       },
 
       dist: {
-        files: ['public/**/*'],
+        files: [
+          'public/**/*',
+          '!public/bower_components/**/*'
+        ],
         options: {
           livereload: true
         }
