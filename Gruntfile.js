@@ -23,6 +23,7 @@ module.exports = function(grunt) {
           'public/**/*',
           '!public/bower_components/**/*'
         ],
+        tasks: ['jshint'],
         options: {
           livereload: true
         }
@@ -39,6 +40,13 @@ module.exports = function(grunt) {
           open: 'http://localhost:9001'
         }
       }
+    },
+
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      main: 'public/js/main.js'
     },
 
     autoprefixer: {
@@ -61,6 +69,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-gh-pages');
 
