@@ -1,13 +1,15 @@
 // main.js
 //
 
-"use strict";
-
 (function(w, $, undefined) {
+  "use strict";
 
-	function init() {
-		console.log('DOM ready!');
-	}
+	var Module = {
 
-	$(init);
+    init: function() {
+      // ...
+    }
+  };
+
+	$(Module.init);
 })(this, jQuery);
